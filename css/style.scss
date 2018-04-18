@@ -2,14 +2,6 @@ $lightBlue: #A1BED9;
 $darkGrey: #313131;
 $midGrey: #474747;
 
-.highlight{
-  color: #FFF;
-}
-
-.blue{
-  color: $lightBlue;
-}
-
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -17,10 +9,12 @@ body{
   -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+
   a{
     text-decoration: none;
     color: inherit;
   }
+
   h1,h2,h3,h4,h5,h6,p{
     margin: 0;
   }
@@ -34,6 +28,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   #nav-btn{
     padding: 10px;
     border-radius: 5px;
@@ -48,6 +43,7 @@ nav{
   .img-template{
     padding: 2pt;
     margin: 25px 0 20px;
+
     .hero{
       width: 100%;
       margin-left: -2pt;
@@ -56,15 +52,17 @@ nav{
   }
 
   .info-template{
+
     #address{
       padding-top: 10px;
     }
+
     #city{
       padding: 10px 0;
     }
+
     #phone{
       text-decoration: underline;
-      margin-bottom: 25px;
     }
   }
 
@@ -74,9 +72,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     &:first-child{
       border-radius: 10px 10px 0 0;
+      margin-top: 25px;
     }
+
     .option-title{
       padding-left: 15px;
     }
@@ -100,6 +101,16 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+//helpers
+
+.highlight{
+  color: #FFF;
+}
+
+.blue{
+  color: $lightBlue;
 }
 
 .caret{

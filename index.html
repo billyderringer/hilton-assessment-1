@@ -4,6 +4,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
+    <!--prevent safari from changing telephone link styles on detection-->
+    <meta name="format-detection" content="telephone=no">
+
     <title>Assessment-1</title>
 
     <link rel="stylesheet" href="./css/style.css">
@@ -18,6 +21,7 @@
         <h3 class="highlight">
             Hotel Details
         </h3>
+        <!--svg Hilton icon-->
         <div id="nav-icon">
             <?xml version="1.0" encoding="UTF-8"?>
             <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
@@ -39,6 +43,7 @@
 
         </div>
     </nav>
+    <!--begin content-->
     <div class="page-template">
         <div class="img-template">
             <img src="./assets/hotelexterior.jpg"
@@ -54,9 +59,11 @@
             <h4 id="city"
                 class="blue"
             >Chicago, Illinois, 60605</h4>
-            <h4 id="phone"
-                class="highlight"
-            >1-312-922-4400</h4>
+            <a href="tel:1-312-922-4400"
+               id="phone"
+               class="highlight"
+            >1-312-922-4400
+            </a>
         </div>
         <div class="options-template">
             <a href="#"
@@ -92,7 +99,11 @@
         </div>
     </div>
     <footer>
-        <h4>Thanks for the opportunity!</h4>
+        <p>Thanks for the opportunity!
+            <a  href="https://github.com/billyderringer/hilton-assessment-1"
+                class="blue"
+            >
+                 View repo here.</a></p>
     </footer>
 </body>
 </html>
